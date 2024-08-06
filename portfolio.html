@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Web Page</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            direction: rtl;
+            background-color: #efeeee;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: teal;
+            color: #fff;
+            padding: 50px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            position: absolute;
+            margin-right: -10px;
+            width: 15rem;
+            opacity: 0.7;
+        }
+
+        header h1 {
+            margin: 0;
+            opacity: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li:first-child {
+            padding-bottom: 5px;
+            border-bottom: 2px solid rgba(250, 250, 250, 0.8);
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 10%;
+        }
+
+        .hero img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero h2 {
+            font-size: 2em;
+            margin: 20px 0 0px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        footer {
+            background-color: teal;
+            color: #fff;
+            text-align: center;
+            padding: 20px 10%;
+            width: 80vw;
+            position: absolute;
+            bottom: 0;
+        }
+
+        footer svg {
+            margin-right: 20px;
+        }
+
+        @media (max-width: 768px) {
+          
+
+            header img {
+                width: 5rem;
+            }
+
+            
+
+            footer {
+                position: relative;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="ar.png" alt="">
+        <h1>إيناس</h1>
+        <nav>
+            <ul>
+                <li><a href="#">الرئيسيــة</a></li>
+                <li><a href="#">الهوايــات</a></li>
+                <li><a href="#">التواصــل</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="profile.png" alt="Profile Photo">
+        <h2>مرحباً، انا إيناس</h2>
+        <br>
+        <p>
+            أهلاً بكم في صفحتي الشخصية. انا طالبة علوم حاسوب في السنة الثالثة.
+            دائماً ما اجد نفسي منهمكة في العمل على المشاريع الصغيرة لتنمية مهاراتي وقدراتي في هذا مجال. كل من يعرفني سيخبرك أن شخصيتي تتّسم بالنشاط والحيوية.
+        </p>
+        <br>
+        <p>
+            أكثر ما احب هو تكوين صداقات والتعرف على أناس جدد، فلا تشعر بالحرج من مراسلتي والتواصل معي 🙂♥️
+        </p>
+    </section>
+
+    <footer>
+    <p>البريـد الإلكتـروني: example@gmail.com</p>
+    <p>التواصـل الإجتـماعي: <a href="#" target="_blank" aria-label="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 8H7V12H9V22H13V12H16L17 8H13V6C13 5 14 4 15 4H17V0H15C12 0 10 2 10 5V8H9Z" fill="#ffffff"/>
+            </svg>
+        </a>
+        <a href="#" target="_blank" aria-label="Twitter">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 4.556C23.117 4.949 22.168 5.213 21.172 5.332C22.189 4.723 22.97 3.758 23.337 2.608C22.386 3.172 21.332 3.575 20.21 3.801C19.313 2.845 18.032 2.25 16.616 2.25C13.919 2.25 11.803 4.366 11.803 7.062C11.803 7.444 11.85 7.816 11.937 8.174C7.728 7.975 4.1 6.13 1.671 3.149C1.247 3.882 1.003 4.731 1.003 5.629C1.003 7.282 1.861 8.738 3.137 9.55C2.329 9.534 1.571 9.306 0.908 8.917V8.974C0.908 11.363 2.643 13.339 4.938 13.756C4.531 13.866 4.1 13.923 3.654 13.923C3.341 13.923 3.037 13.89 2.742 13.832C3.359 15.779 5.095 17.25 7.164 17.292C5.506 18.63 3.417 19.439 1.171 19.439C0.781 19.439 0.396 19.416 0 19.37C2.082 20.817 4.555 21.75 7.264 21.75C16.612 21.75 21.543 13.986 21.543 7.792C21.543 7.566 21.539 7.342 21.53 7.119C22.505 6.392 23.34 5.455 24 4.556Z" fill="#ffffff"/>
+            </svg>
+        </a>
+        <a href="#" target="_blank" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2.163C6.499 2.163 2.163 6.499 2.163 12C2.163 17.501 6.499 21.837 12 21.837C17.501 21.837 21.837 17.501 21.837 12C21.837 6.499 17.501 2.163 12 2.163ZM12 19.837C7.56 19.837 4.163 16.44 4.163 12C4.163 7.56 7.56 4.163 12 4.163C16.44 4.163 19.837 7.56 19.837 12C19.837 16.44 16.44 19.837 12 19.837ZM18.337 6.999C18.337 6.447 17.889 6 17.337 6C16.785 6 16.337 6.447 16.337 6.999C16.337 7.551 16.785 7.998 17.337 7.998C17.889 7.998 18.337 7.551 18.337 6.999ZM12 6.838C9.23 6.838 6.838 9.23 6.838 12C6.838 14.77 9.23 17.162 12 17.162C14.77 17.162 17.162 14.77 17.162 12C17.162 9.23 14.77 6.838 12 6.838ZM12 15.162C10.136 15.162 8.538 13.564 8.538 11.7C8.538 9.836 10.136 8.238 12 8.238C13.864 8.238 15.462 9.836 15.462 11.7C15.462 13.564 13.864 15.162 12 15.162Z" fill="#ffffff"/>
+            </svg>
+        </a></p>
+    </footer>
+</body>
+</html>
